@@ -9,7 +9,9 @@ Selenium Framework u kullanılarak Maven projesi Java dili ile Web Otomasyonu ge
 2. **CRUD İşlemleri
 
 *Kullanıcı sepetine ürün ekleyebilir
+
 *Yönetici ürün listesine ürün ekleyebilir
+
 *Yönetici ürünü listeden silebilir
 
 3. Sunucuyu **Run edin.
