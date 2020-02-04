@@ -1,40 +1,27 @@
-# ShoppingCart [![HitCount](http://hits.dwyl.io/ikismail/ShoppingCart.svg)](http://hits.dwyl.io/ikismail/ShoppingCart)
+#E-Ticaret  
 
-Developed an end to end **Ecommerce web Application using Spring MVC** with multiple
-modules
+Selenium Framework u kullanılarak Maven projesi Java dili ile Web Otomasyonu geliştirildi.
 
-### Functionalities:
+### İşlevsellikler
 
-1. User Registeration
+1. Kullanıcı Kaydı
 
-2. **CRUD Operations** like
+2. **CRUD İşlemleri
 
-* User can add product to his cart
-* Admin can add product to the product list
-* Admin can edit the product details
-* Admin can delete the product from the list
+*Kullanıcı sepetine ürün ekleyebilir
+*Yönetici ürün listesine ürün ekleyebilir
+*Yönetici ürünü listeden silebilir
 
-3. Run the server.
+3. Sunucuyu **Run edin.
 
-### Tools and Technologies:
+### Kullandığım Teknolojiler
 
-* **Technology** : Bootstrap, Java, Spring MVC, Hibernate, JSP, Maven.
-* **Application Servicer**: Apache Tomcat Server
-* **Database** : H2 Database.
+* **Teknolojiler** : Bootstrap, Java, Spring MVC, Hibernate, JSP, Maven.
+* **Uygulama Sunucusu**: Apache Tomcat Server
+* **Veritabanı** : H2 Database.
 
 
-### ScreenShots:
 
-* Home Page:
 
-![Alt text](https://github.com/ikismail/ShoppingCart/blob/master/src/main/webapp/WEB-INF/resource/images/screenshots/Home.jpg "Home Page")
-
-* Contact Us:
-
-![Alt text](https://github.com/ikismail/ShoppingCart/blob/master/src/main/webapp/WEB-INF/resource/images/screenshots/ContactUs.png)
-
-#### Somethings wrong!!
-
-If you find that something's wrong with this package, you can let me know by raising an issue on the GitHub issue tracker
 
 
