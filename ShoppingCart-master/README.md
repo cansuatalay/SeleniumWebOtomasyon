@@ -6,6 +6,8 @@ Selenium Framework u kullanılarak Maven projesi Java dili ile Web Otomasyonu ge
 
 1. Kullanıcı Kaydı
 
+Anasayfa açılır ve siteye login olunur.
+
 2. **CRUD İşlemleri
 
 *Kullanıcı sepetine ürün ekleyebilir
