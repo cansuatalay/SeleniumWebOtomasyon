@@ -34,7 +34,7 @@ public class ProductController {
 	@Autowired
 	private ProductService productService;
 
-	// Getters and Setters
+
 
 	public ProductService getProductService() {
 		return productService;
@@ -44,10 +44,7 @@ public class ProductController {
 		this.productService = productService;
 	}
 
-	// Configuration for MultiPartResolver
-	// Multipart resolver is for uploading images and other media
-	// maxupload size is for image size should not be maximum than 10240000
-
+	
 	@Bean
 	public MultipartResolver multipartResolver() {
 		CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver();
@@ -55,24 +52,13 @@ public class ProductController {
 		return multipartResolver;
 	}
 
-	// Request Mapping
-
-	// which displays the list of products to the productList page
-
-	/* Product List using Angular
-	* @RequestMapping("/getAllProducts")
-	* public ModelAndView getAllProducts() {
-	*	List<Product> products = productService.getAllProducts();
-	*	return new ModelAndView("productListAngular", "products", products);
-	*}
-	*/
-	//		Normal ProductList view 
+	
 	  @RequestMapping("/getAllProducts") public ModelAndView getAllProducts() {
 	  List<Product> products = productService.getAllProducts(); return new
 	  ModelAndView("productList", "products", products); }
 	 
 	
-	// this is used for getting the product by productId
+	
 
 	@RequestMapping("getProductById/{productId}")
 	public ModelAndView getProductById(@PathVariable(value = "productId") String productId) {
@@ -104,8 +90,7 @@ public class ProductController {
 	@RequestMapping(value = "/admin/product/addProduct", method = RequestMethod.GET)
 	public String getProductForm(Model model) {
 		Product product = new Product();
-		// New Arrivals
-		// set the category as 1 for the Book book
+		
 		product.setProductCategory("Android");
 		model.addAttribute("productFormObj", product);
 		return "addProduct";
@@ -114,8 +99,7 @@ public class ProductController {
 
 	@RequestMapping(value = "/admin/product/addProduct", method = RequestMethod.POST)
 	public String addProduct(@Valid @ModelAttribute(value = "productFormObj") Product product, BindingResult result) {
-		// Binding Result is used if the form that has any error then it will
-		// redirect to the same page without performing any functions
+		
 		if (result.hasErrors())
 			return "addProduct";
 		productService.addProduct(product);
