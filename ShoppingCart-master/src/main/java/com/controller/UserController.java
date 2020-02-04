@@ -44,7 +44,7 @@ public class UserController {
 		return new ModelAndView("register", "customer", customer);
 	}
 
-	// to insert the data
+	
 	@RequestMapping(value = "/customer/registration", method = RequestMethod.POST)
 	public String registerCustomer(@Valid @ModelAttribute(value = "customer") Customer customer, Model model,
 			BindingResult result) {
