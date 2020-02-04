@@ -25,7 +25,7 @@ public class HomeController {
 
 	@RequestMapping("/hello")
 	public ModelAndView sayHello() {
-		return new ModelAndView("hello", "hello", "Hello Mr.Ismail");
+		return new ModelAndView("hello", "hello", "Hello Cansu");
 	}
 
 	@RequestMapping("/login")
